@@ -44,20 +44,16 @@ public class SumAverage {
   public static double average(int lowerBound, int upperBound) {
     // TODO fill in code here using while loop and replace the return statement
     double avarage = 0;
-    if (lowerBound == upperBound) {
-      return avarage = (lowerBound + upperBound) / 2;
-    } else {
-      int sum = 0;
-      int count = 0;
-      int i = lowerBound;
-      while (i <= upperBound) {
-        sum += i;
-        count++;
-        i++;
-      }
-      avarage = (double) sum / count;
-      return avarage;
+    int sum = 0;
+    int count = 0;
+    int i = lowerBound;
+    while (i <= upperBound) {
+      sum += i;
+      count++;
+      i++;
     }
+    avarage = (double) sum / count;
+    return avarage;
   }
 
   /**
